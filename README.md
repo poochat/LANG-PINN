@@ -1,5 +1,9 @@
 Lang-PINN: 从自然语言到物理信息神经网络的多智能体框架
 
+Abstract: Physics-informed neural networks (PINNs) provide a powerful approach for solving partial differential equations (PDEs), but constructing a usable PINN remains labor-intensive and error-prone. Scientists must interpret problems as PDE formulations, design architectures and loss functions, and implement stable training pipelines. Existing large language model (LLM) based approaches address isolated steps such as code generation or architecture suggestion, but typically assume a formal PDE is already specified and therefore lack an end-to-end perspective. We present Lang-PINN, an LLM-driven multi-agent system that builds trainable PINNs directly from natural language task descriptions. Lang-PINN coordinates four complementary agents: a PDE Agent that parses task descriptions into symbolic PDEs, a PINN Agent that selects architectures, a Code Agent that generates modular implementations, and a Feedback Agent that executes and diagnoses errors for iterative refinement. This design transforms informal task statements into executable and verifiable PINN code. Experiments show that Lang-PINN achieves substantially lower errors and greater robustness than competitive baselines: mean squared error (MSE) is reduced by up to 3--5 orders of magnitude, end-to-end execution success improves by more than 50\%, and reduces time overhead by up to 74\%.
+
+摘要：物理知情神经网络（PINNs）提供了一种强大的方法 求解偏微分方程（偏微分方程），但构造一个可用的PINN 依然劳动密集且容易出错。科学家必须将问题解释为 偏微分方程的表述、设计架构和损耗函数，以及实现稳定 培训管道。现有基于大型语言模型（LLM）的方法 处理孤立步骤，如代码生成或架构建议，但 通常假设已经指定了一个形式偏微分方程，因此缺少 端到端透视。我们介绍Lang-PINN，一个基于大型语言模型的多智能体系统 它直接从自然语言任务描述构建可训练的PINNs。 Lang-PINN 协调四个互补代理：一个解析任务的偏微分方程代理 将描述转化为符号偏微分方程，选择架构的PINN代理，以及 生成模块化实现的代码代理，以及 执行并诊断错误以实现迭代优化。该设计变换 将非正式任务语句转换为可执行且可验证的PINN代码。实验 证明Lang-PINN实现了显著更低的误差和更高的鲁棒性 相比竞争基线：均方误差（MSE）可减少最多3-5 端到端执行成功率提升了数个数量级以上， 并将时间开销降低高达74%。
+
 # Lang-PINN
 
 From Language to Physics-Informed Neural Networks via a Multi-Agent Framework
@@ -826,3 +830,11 @@ Physics-Informed Neural Networks (PINNs), Large Language Models (LLMs), Multi-Ag
 Copyright 2026 Xin He. All rights reserved.
 
 Last updated: May 12, 2026
+
+## 参考资料
+
+https://arxiv.org/pdf/2510.05158
+
+https://ieeexplore.ieee.org/abstract/document/11418428
+
+https://github.com/huang812/pinn
